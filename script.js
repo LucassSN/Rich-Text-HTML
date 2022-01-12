@@ -1,11 +1,23 @@
 
-const btn1 = document.getElementById("btn1")
-const textArea = document.getElementById("text_area")
+const btns = document.querySelectorAll('.btn')
 
+btns.forEach(btns => {
+    btns.addEventListener('click',()=>{
+        let command = btns.dataset['element'];
+        if(command == 'createLink'){
+            let url = prompt('Insert Link:', 'https://')
+        document.execCommand(command,false,url);
+    }else{
+        if(command == "insertImage"){
+            let url = (prompt('Insert Link:'))
+            document.execCommand(command,false,url);
 
-
-btn1.addEventListener("click",function(){
-    alert("Hello word!")
-    
+        }else{
+            document.execCommand(command,false,null)
+        }
+    }
+    })
 
 })
+
+

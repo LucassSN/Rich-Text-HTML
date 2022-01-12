@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Rich Text</title>
-        <link rel=stylesheet href="style.css">
-        
-    </head>
-    <body>
-        
-       
-        <div class = icon> 
-        <button id=btn1><img src="Icons/bold_icon.png" width = 15px></button>
-        <button id=btn2><img src="Icons/italic_icon.png" width = 15px ></button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rich Text</title>
+    <link rel=stylesheet href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <label>
+            <input type="checkbox">
+            <span class="check"></span>
+        </label>
+    </div>
+
+    <div class="main">
+        <div class=icon>
+            <button id=btn1><img src="Icons/bold.png" width=15px class="btn" data-element='bold'></button>
+            <button id=btn2><img src="Icons/italics.png" width=15px class="btn" data-element='italic'></button>
+            <button id=btn1><img src="Icons/underline.png" width=15px class="btn" data-element='underline'></button>
+            <button id=btn2><img src="Icons/underedList.png" width=15px class="btn"
+                    data-element='insertUnorderedList'></button>
+            <button id=btn1><img src="Icons/insertOrderedList.png" width=15px class="btn"
+                    data-element='insertOrderedList'></button>
+            <button id=btn2><img src="Icons/link.png" width=15px class="btn" data-element='createLink'></button>
+            <button id=btn1><img src="Icons/justifyLeft.png" width=15px class="btn" data-element='justifyLeft'></button>
+            <button id=btn2><img src="Icons/justifyCenter.png" width=15px class="btn"
+                    data-element='justifyCenter'></button>
+            <button id=btn1><img src="Icons/justifyRight.png" width=15px class="btn"
+                    data-element='justifyRight'></button>
+            <button id=btn2><img src="Icons/image.png" width=15px class="btn" data-element='insertImage'></button>
         </div><br>
 
-     
-        <textarea id ="text_area" cols="60" rows = "30"></textarea>
+        <div class="textArea" contenteditable="true">
+        </div>
+    </div>
+    <script src="./script.js"></script>
 
-        <script src="./script.js"></script>
-      
-    </body>
-    <script>
-        
-    </script>
+</body>
+<script>
+
+</script>
+
 </html>
